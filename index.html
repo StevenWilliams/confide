@@ -3,159 +3,293 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>Confide - The authentication solution for Laravel 4</title>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
     
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-      	<div class="panel">
-	        <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-	        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-	        <p>Once you've exhausted the fun in this document, you should check out:</p>
-	        <div class="row">
-	        	<div class="large-4 medium-4 columns">
-	    		<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-	    	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-	        	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-	        	</div>        
-					</div>
-      	</div>
-      </div>
-    </div>
+<div class="row">
+	
+  <div class="large-2 columns menu">
+	<nav>
+		<ul class="side-nav">
+		  <li><a href="#overview">Overview</a></li>
+		  <li><a href="#features">Features</a></li>
+		  <li><a href="#installation">Installation</a></li>
+		  <li><a href="#configuration">Configuration</a></li>
+		  <li><a href="#usage">Usage</a>
+				<ul>
+					<li><a href="#">Link a</a></li>
+					<li><a href="#">Link b</a></li>
+					<li><a href="#">Link c</a></li>
+				</ul>
+		  </li>
+		   <li><a href="#troubleshooting">Troubleshooting</a></li>
+		    <li><a href="#release-notes">Release Notes</a></li>
+		  <li><a href="#license">License</a></li>
+		  <li><a href="#contributing">Contributing</a></li>
+		  <li href="#faqs"><a>FAQs</a></li>
+		  <li><a href="#additional-info">Additional Information</a></li>
+		</ul>
+	</nav>
+  
+  </div>
+  <div class="large-10 columns content">
+	<header>
+		<div class="row">
+			<div class="medium-2 columns">
+				<img class="page-logo" src="img/confide.png" alt="confide-logo" />
+			</div>
+			 <div class="medium-10 columns ">
+			  <h1 class="page-title">Confide</h1>
+			  <h2 class="page-tagline">The authentication solution for Laravel 4</h2>
+			</div>
+	  </div>
+	</header>
+	<section class="overview" id="overview">
+		<h3 class="section-heading">Overview</h3>
+		<p>Confide is an authentication solution for Laravel4 made to eliminate repetitive tasks involving the management of users:
+		 <ul>
+				<li>Account creation</li>
+				<li>Login</li>
+				<li>Logout</li>
+				<li>Confirmation by Email</li>
+				<li>Password Reset</li>
+				<li>and more!</li>
+		 </ul>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+Confide aims to be simple to use, quick to configure and flexible. It is licensed under the MIT license.
+		</p>
+	</section>
+	<section class="features" id="features">
+		<h3 class="section-heading">Features</h3>
+		<p>Current:</p>
+		<ul>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-12.columns" />
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <div class="row collapse">
-				        <label>Input Label</label>
-				        <div class="small-9 columns">
-				          <input type="text" placeholder="small-9.columns" />
-				        </div>
-				        <div class="small-3 columns">
-				          <span class="postfix">.com</span>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Select Box</label>
-				      <select>
-				        <option value="husker">Husker</option>
-				        <option value="starbuck">Starbuck</option>
-				        <option value="hotdog">Hot Dog</option>
-				        <option value="apollo">Apollo</option>
-				      </select>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-6 medium-6 columns">
-				      <label>Choose Your Favorite</label>
-				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-				    </div>
-				    <div class="large-6 medium-6 columns">
-				      <label>Check these out</label>
-				      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Textarea Label</label>
-				      <textarea placeholder="small-12.columns"></textarea>
-				    </div>
-				  </div>
-				</form>
-      </div>     
 
-      <div class="large-4 medium-4 columns">
-			  <h5>Try one of these buttons:</h5>
-			  <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-				<div class="panel">
-        	<h5>So many components, girl!</h5>
-        	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
-    </div>
+<li>Account confirmation (through confirmation link).</li>
+<li>Password reset (sending email with a change password link).</li>
+<li>Easily render forms for login, signup and password reset.</li>
+<li>Generate routes for login, signup, password reset, confirmation, etc.</li>
+<li>Generate a customizable controller that handles the basic user account actions.</li>
+<li>Contains a set of methods to help with basic user features.</li>
+<li>Integrated with the Laravel Auth and Reminders component/configs.</li>
+<li>User validation.</li>
+<li>Login throttling.</li>
+<li>Redirecting to previous route after authentication.</li>
+<li>Checks for unique email and username in signup</li>
+<li>If you are looking for user roles and permissions see Entrust</li>
+		</ul>
+<p>For MongoDB support see <a href="https://github.com/Zizaco/confide-mongo">Confide Mongo</a></p>
+		
+
+	</section>
+	<section class="installation" id="installation">
+		<h3 class="section-heading">Installation</h3>
+		<p>In the <code>require</code> key of <code>composer.json</code> file add the following:</p>
+		<pre><code>"zizaco/confide": "~4.0"</code></pre>
+		<p>Run the Composer update comand</p>
+		<pre><code>$ composer update</code></pre>
+		<p>In your <code>config/app.php</code> add '<code>Zizaco\Confide\ServiceProvider'</code> to the end of the <code>providers</code> array</p>
+		<pre><code>'providers' => array(
+
+    'Illuminate\Foundation\Providers\ArtisanServiceProvider',
+    'Illuminate\Auth\AuthServiceProvider',
+    ...
+    'Zizaco\Confide\ServiceProvider',
+
+),</code></pre>
+		<p>At the end of <code>config/app.php</code> add <code>'Confide' => 'Zizaco\Confide\Facade'</code> to the <code>aliases</code> array</p>
+		<pre><code>'aliases' => array(
+
+    'App'        => 'Illuminate\Support\Facades\App',
+    'Artisan'    => 'Illuminate\Support\Facades\Artisan',
+    ...
+    'Confide'    => 'Zizaco\Confide\Facade',
+
+),</code></pre>
+	</section>
+	<section class="configuration" id="configuration">
+		<h3 class="section-heading">Configuration</h3>
+		<p>Set the properly values to the <code>config/auth.php</code>. This values will be used by confide to generate the database migration and to generate controllers and routes.</p>
+
+<p>Set the <code>address</code> and <code>name</code> from the <code>from</code> array in <code>config/mail.php</code>. Those will be used to send account confirmation and password reset emails to the users.</p>
+	</section>
+	<section class="setup">
+		<h3 class="section-heading">Setup</h3>
+		<p>Now generate the Confide migration and the reminder password table migration:</p>
+		<pre><code>$ php artisan confide:migration</code></pre>
+		<p>It will generate the <code>[timestamp]_confide_setup_users_table.php</code> migration. You may now run it with the artisan migrate command:</p>
+		<pre><code>$ php artisan migrate</code></pre>
+		<p>It will setup a table containing <code>email</code>, <code>password</code>, <code>remember_token</code>, <code>confirmation_code</code> and <code>confirmed</code> columns, which are the default fields needed for Confide use. Feel free to add more columns to the table later.</p>
+		<p>Change your User model in <code>app/models/User.php</code> to:</p>
+		<pre><code>
+use Zizaco\Confide\ConfideUser;
+use Zizaco\Confide\ConfideUserInterface;
+
+class User extends Eloquent implements ConfideUserInterface {
+    use ConfideUser;
+}</code></pre>
+	<p><code>ConfideUser</code> trait will take care of some behaviors of the user model.</p>
+	<br />
+	<p>Lastly, you can dump a default controller, repository and the default routes for Confide.</p>
+	<pre><code>$ php artisan confide:controller
+$ php artisan confide:routes</code></pre>
+	<p>Don't forget to dump composer autoload</p>
+	<pre><code>$ composer dump-autoload</code></pre>
+	<p><strong>And you are ready to go.</strong> Access <code>http://yourapp/users/create</code> to create your first user. Check the <code>app/routes.php</code> to see the available routes. <strong>You may need to confirm a newly created user</strong> <em>(by "reaching" its <code>confirm()</code> method)</em>, otherwise you can disable the confirmation as a requirement to login in in the config file <em>(see bellow)</em>.</p>
+	</section>
+	<section class="usage" id="usage">
+		<h3 class="section-heading">Usage</h3>
+		
+	</section>
+	<section class="troubleshooting" id="troubleshooting">
+		<h3 class="section-heading">Troubleshooting</h3>
+		
+		
+		
+<section class="troubleshoot-item">	
+	<p><strong>[2014-07-18 01:13:15] production.ERROR: exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'password_confirmation' in 'field list' (SQL: insert into `users` ...</strong></p>
+	<p>The <code>password_confirmation</code> attribute should be removed from the object before being sent to the database. Make sure your user model implement the <code>ConfideUserInterface</code> and that it use the <code>ConfideUser</code> trait <a href="#user-model">as described above</a>. Otherwise if you are using a custom validator, you will have to unset <code>password_confirmation</code> before saving the user.</p>
+</section>
+<section class="troubleshoot-item">
+	<p><strong>I receive a "Your account may not be confirmed" when trying to login</strong></p>
+	<p>You need to confirm a newly created user <em>(by "reaching" its <code>confirm()</code> method)</em>, otherwise you can disable the confirmation as a requirement to login in in the config file <em>(see bellow)</em>. You can easly confirm an user manually using Laravel's <code>artisan tinker</code> tool.</p>
+</section>
+<section class="troubleshoot-item">
+	<p><strong>I'm not able to generate a controller with namespaces</strong></p>
+	<p>In bash, you will need to use double '\\' backslashes. Also the generated file will be inside a directory equivalent to the namespace:</p>
+	<pre><code>$ php artisan confide:controller --name=MyProject\\Auth\\User
+	</code></pre>
+</section>
+<section class="troubleshoot-item">
+	<p><strong>Users are able to login without confirming account</strong></p>
+	<p>If you want only confirmed users to login, in your <code>UserController</code>, instead of simply calling <code>logAttempt( $input )</code>, call <code>logAttempt( $input, true )</code>. The second parameter stands for <em>"confirmed_only"</em>.</p>
+</section>
+<section class="troubleshoot-item">
+	<p><strong>My application is crashing since I ran composer update</strong></p>
+	<p><em>Confide 4.0.0</em> was a huge update where all the codebase has been rewritten. Some classes changed, the generators has been improved in order to match some better practices (like repositories and separated validator classes). See the <em>Release Notes</em> bellow.</p>
+	<p>If you have a legacy project that uses an older version of Confide, don't worry. You will be always able to specify a previous version in your <code>composer.json</code> file.</p>
+	<p>For example: <code>"zizaco/confide": "~3.2"</code> will avoid composer download version 4.0 but will be able to download bugfixes of version 3.2.</p>
+</section>
+		
+		
+		
+	</section>
+	
+	<section class="release-notes" id="release-notes">
+		<h3 class="section-heading">Release Notes</h3>
+				
+		<section class="release-note">
+			<h4>
+				<a href="https://github.com/Zizaco/confide/pull/209">Version 4.0.0 Beta 3</a>
+			</h4>
+
+			<ul>
+			<li>Now you can customize how long will take for a password reset request to expire (default to 7 hours).</li>
+			<li>Reordered validations</li>
+			<li>Now all validations are called even if one of them fails. So all validation messages are sent at once.</li>
+			<li>
+			<code>validateIsUnique</code> method now sends key to attachErrorMsg and also check for errors on each <code>$identity</code> field at once</li>
+			</ul>
+
+		</section>
+		<section class="release-note">
+			<h4>Version 4.0.0 Beta 2</h4>
+
+			<ul>
+			<li>UserValidator now adds errors to an existing MessageBag instead of replacing it.</li>
+			<li>Password reset token will expire after 7 days.</li>
+			<li>Added support for custom connections using the $connection attribute of the model.</li>
+			<li>Password reset requests are deleted after being used.</li>
+			</ul>
+		</section>
+		<section class="release-note">
+		<h4>Version 4.0.0 Beta 1</h4>
+
+			<ul class="task-list">
+			<li>Dropped Ardent dependency.</li>
+			<li>Updated to support Laravel 4.2</li>
+			<li>Dropped support for PHP 5.3</li>
+			<li>ConfideUser is going to be a trait+interface from now on.</li>
+			<li>Controller generation now also generates an UserRepository class.</li>
+			<li>Removed deprecated variables, functions and classes.</li>
+			<li>All the codebase has been rewritten.</li>
+			</ul><p><strong>Upgrade note:</strong> A partial update from previous versions is not recommended. In order to upgrade from v3.* to v4.0.0 the best approach is to update the class names in the providers and aliases array, re-generate the user table with the new migration, re-write the "user" class and finally re-generate the controllers. It's very likely any customization made in your codebase will be affected.</p>
+		</section>
+		<section class="release-note">
+			<h4>Version 3.0.0</h4>
+			<p>Updated to support Laravel 4.1</p>
+		</section>
+		<section class="release-note">
+			<h4>Version 2.0.0 Beta 4</h4>
+
+			<p>Removed deprecated variable and functions.</p>
+
+			<ul class="task-list">
+			<li>$updateRules</li>
+			<li>amend()</li>
+			<li>generateUuid</li>
+			<li>getUpdateRules</li>
+			<li>prepareRules</li>
+			<li>getRules</li>
+			<li>setUpdateRules</li>
+			<li>getUserFromCredsIdentity</li>
+			<li>checkUserExists</li>
+			<li>isConfirmed</li>
+			</ul><p>Adds two config values</p>
+
+			<ul class="task-list">
+			<li>login_cache_field (#161)</li>
+			<li>throttle_time_period (#162)</li>
+			</ul>
+		</section>
+		<section class="release-note">
+			<h4>Version 2.0.0 Beta 3</h4>
+
+			<p>Readme Update</p>
+		</section>
+		<section class="release-note">
+		<h4>Version 2.0.0 Beta 2</h4>
+
+			<p>Pulls in a few pull requests and also locks to Ardent 2.1.x</p>
+
+			<ul class="task-list">
+			<li>Properly handles validation messaging (#124)</li>
+			<li>Properly validates in real_save (#110)</li>
+			<li>Auth redirect is handled using Redirect::guest instead of a custom session variable (#145)</li>
+			<li>Bruteforce vulnerability is addressed. (#151)</li>
+			</ul>
+		</section>
+		<section class="release-note">
+		<h4>Version 2.0.0 Beta 2</h4>
+
+		<p>Locked to Ardent 1.1.x</p>
+		</section>
+	</section>
+	<section class="license" id="license">
+		<h3 class="section-heading">License</h3>
+		<p>Confide is free software distributed under the terms of the MIT license.</p>
+	</section>
+
+	<section class="contributing" id="contributing">
+		<h3 class="section-heading">Contributing</h3>
+		<p>Feel free to fork this project on <a href="https://github.com/Zizaco/confide">GitHub</a></p>
+	</section>
+	
+	<section class="faqs" id="faqs">
+		<h3 class="section-heading">FAQs</h3>
+		
+	</section>
+	<section class="additional-info" id="additional-info">
+		<h3 class="section-heading">Additional Information</h3>
+		
+	</section>
+  </div>
+</div>
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
